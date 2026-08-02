@@ -20,4 +20,29 @@ If you would like to run this project locally on your machine, follow these step
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/awahabsagheer/e-commerce-web-store.git](https://github.com/awahabsagheer/e-commerce-web-store.git)
+   git clone https://github.com/awahabsagheer/e-commerce-web-store.git
+   ```
+2. Navigate into the project directory:
+    ```bash
+    cd e-commerce-web-store
+    ```
+3. Install PHP dependencies:
+    ```bash
+    composer install
+    ```
+4. Copy the environment file and configure your MySQL database credentials:
+    ```bash
+    cp .env.example .env
+    ```
+5. Generate a new application key:
+    ```bash
+    php artisan key:generate
+    ```
+6. Run the database migrations to build the tables:
+    ```bash
+    php artisan migrate
+    ```
+7. Start the local development server:
+    ```bash
+    php artisan serve
+    ```
